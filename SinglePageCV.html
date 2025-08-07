@@ -3,17 +3,47 @@
     <title>Single Page CV</title>
     <style>
       body {
-        margin: 50px;
+        width: 800px;
+        border: 3px solid black;
+        padding: 50px;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
       }
       .category > p:first-of-type {
         color: green;
-        padding-bottom: 0.2em;
+        padding-top: 1em;
       }
-      div {
-        padding-bottom: 0.3em;
+      .sub-category {
+        padding-top: 1em;
       }
-      .sub-category > p:first-of-type {
+      .sub-title > p:first-of-type {
         color: blue;
+        margin: 0;
+      }
+      .sub-title {
+        margin-bottom: 0.3em;
+      }
+      p {
+        margin: 0;
+        padding-top: 0em;
+        font-size: 1.3em;
+      }
+      li {
+        font-size: 1.2em;
+        padding: 0.2em;
+      }
+      ul {
+        padding-left: 1em;
+        margin: 0.5em;
+      }
+      hr {
+        margin: 0;
+        height: 3px;
+        background-color: black;
+        width: 700px;
+      }
+      h1 {
+        margin-bottom: 0;
       }
     </style>
   </head>
@@ -22,44 +52,72 @@
     <h1>Danilo Puerari</h1>
 
     <div class="category">
-      <p class="text">Junior Frontend Developer</p>
-      <p class="text">123 Your street</p>
-      <p class="text">Cavriol, CAP 25031</p>
-      <p class="text">333 12 34 567</p>
-      <p class="text">no_reply@gmail.com</p>
-    </div>
-    <div class="category">
-      <p class="text">Skills</p>
-      <p class="text">
-        Html, CSS, JavaScript, Accessibility, Figma to Design, Responsive Web
-        Design, Technical Writing, Presentation
-      </p>
-    </div>
-    <div class="category">
-      <p class="text">Education</p>
+      <p>Junior Frontend Developer</p>
       <div class="sub-category">
-        <p class="text">MIT, Cambridge - Degree</p>
-        <p class="text">January 2020 to December 2020</p>
-        <p class="text">
-          I did many things at university, I can't remember all of them
+        <p>123 Your street</p>
+        <p>Cavriol, CAP 25031</p>
+        <p>333 12 34 567</p>
+        <p>no_reply@gmail.com</p>
+      </div>
+    </div>
+
+    <div class="category">
+      <p>Skills</p>
+      <div class="sub-category">
+        <p>
+          Html, CSS, JavaScript, Accessibility, Figma to Design, Responsive Web
+          Design, Technical Writing, Presentation
         </p>
       </div>
     </div>
+
     <div class="category">
-      <p class="text">Experience</p>
+      <p>Education</p>
       <div class="sub-category">
-        <p class="text">Gugle LLC, California - More Innovation manager</p>
-        <p class="text">January 2020 to December 2020</p>
-      </div>
-      <div class="sub-category">
-        <p class="text">Speic X, Hawthorne - More Innovation manager</p>
-        <p class="text">January 2020 to December 2020</p>
+        <section class="sub-title">
+          <p>MIT, Cambridge - Degree</p>
+          <p>February 2020 to December 2020</p>
+        </section>
+        <p>Did many things at university, I can't remember all of them</p>
       </div>
     </div>
+
     <div class="category">
-      <p class="text">Across the Internet</p>
-      <p class="text">Linkedin</p>
-      <p class="text">GitHub</p>
+      <p>Experience</p>
+      <div class="sub-category">
+        <section class="sub-title">
+          <p class="sub-title">
+            Gugle LLC, California - More Innovation manager
+          </p>
+          <p>February 2020 to December 2020</p>
+        </section>
+        <ul>
+          <li>Achievement 1</li>
+          <li>Achievement 2</li>
+          <li>Achievement 3</li>
+        </ul>
+        <p>Skills: Many skills, more than you can imagine</p>
+      </div>
+      <div class="sub-category">
+        <section class="sub-title">
+          <p class="sub-title">Speic X, Hawthorne - More Innovation manager</p>
+          <p>February 2020 to December 2020</p>
+        </section>
+        <ul>
+          <li>Achievement 1</li>
+          <li>Achievement 2</li>
+          <li>Achievement 3</li>
+        </ul>
+        <p>Skills: Many skills, more than you can imagine</p>
+      </div>
+    </div>
+
+    <div class="category">
+      <p>Across the Internet</p>
+      <div class="sub-category">
+        <p>Linkedin</p>
+        <p>GitHub</p>
+      </div>
     </div>
   </body>
 </html>
